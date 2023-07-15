@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 52px 7px 60px;
+  background-color: #34657f;
+  width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav ul a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul a::after {
+  content: '';
+  background-color: #ffffff;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+p {
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.btn {
+  background-color: #34657f;
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.35s;
+  font-size: 24px;
+  font-weight: bold;
+  width: max-content;
+}
+
+.btn2 {
+  background-color: #ffffff;
+  color: #34657f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.35s;
+  font-size: 16px;
+  font-weight: bold;
+  width: max-content;
+}
+
+.btn2:hover {
+  transform: scale(0.9);
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.section-p {
+  display: flex;
+  justify-content: center;
+}
+
+.section-t {
+  background: rgb(254, 250, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(254, 250, 255, 1) 100%
+  );
+  padding: 60px;
+  gap: 50px;
+  color: #34657f;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: rgb(254, 250, 255);
+}
+
+.section-t h2 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+.section-p .section-t h1 {
+  font-size: 70px;
+  color: #000000;
+}
+
+.section-p .section-t p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: lighter;
+  margin: 8px 0;
+}
+
+.q-somos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 60px;
+  gap: 50px;
+}
+
+.q-somos h1 {
+  display: flex;
+  color: #34657f;
+  font-size: 64px;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carro-e-texto p {
+  color: #4b4848;
+}
+
+.q-somos img {
+  width: 450px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+.logo-footer {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+  width: 100%;
+  justify-content: start;
+}
+
+.container-footer {
+  display: flex;
+  width: 100%;
+  background-color: #34657f;
+}
+
+.redes-sociais {
+  display: grid;
+  grid-template-columns: 1;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  justify-content: center;
+  column-gap: 5px;
+  width: 100%;
+}
+
+.img-qsomos img {
+  max-width: 200px;
+  max-height: 545px;
+  width: auto;
+  height: auto;
+}
+
+.carro-e-texto {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #34657f;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+footer div a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+footer a img {
+  width: 30px;
+  height: 30px;
+}
+
+footer img {
+  height: 60px;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* CSS */
+  footer {
+    background-color: #34657f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+  }
+
+  .carro-e-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .q-somos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .q-somos img {
+    width: 100%;
+  }
+
+  .q-somos h1 {
+    display: flex;
+    color: #34657f;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section-t {
+    background: rgb(254, 250, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(254, 250, 255, 1) 100%
+    );
+    padding: 30px;
+    gap: 15px;
+    color: #34657f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-t h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .btn {
+    background-color: #34657f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.35s;
+    font-size: 14px;
+    font-weight: bold;
+    width: max-content;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 26px 7px 30px;
+    background-color: #34657f;
+    width: 100%;
+  }
+
+  nav img {
+    height: 35px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
